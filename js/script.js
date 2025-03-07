@@ -17,20 +17,35 @@ $(document).ready( function() {
 
     
     var swiper = new Swiper(".swiper", {
-        loop: true, 
-        effect: "fade", 
+        loop: true,
+        effect: "fade",
         fadeEffect: {
-            crossFade: true, // Плавное исчезновение одного слайда перед появлением другого
-          },
+            crossFade: true,
+        },
         speed: 1000,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        pagination: false, 
+        on: {
+            init: function () {
+                let paginationContainer = document.querySelector(".pagination-dots");
+                paginationContainer.innerHTML = ""; 
+                this.slides.forEach((_, index) => {
+                    let bullet = document.createElement("span");
+                    bullet.classList.add("custom-bullet");
+                    if (index === 0) bullet.classList.add("active"); 
+                    paginationContainer.appendChild(bullet);
+                });
+            },
+            slideChange: function () {
+                let bullets = document.querySelectorAll(".custom-bullet");
+                bullets.forEach((bullet, index) => {
+                    bullet.classList.toggle("active", index === this.realIndex);
+                });
+            },
         },
-      });
+    });
 
 })
