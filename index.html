@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-logo">
+                <a id="main-logo" href="index.html">
+                    <img src="images/logo-main.png" alt="">
+                    <p class="logo-name">Green<span>Mike</span> </p>
+                </a>
+            </div>
+            <div class="header-menu">
+                <ul class="menu">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Наша команда</a></li>
+                    <li><a href="#">Тарифи</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Новини</a></li>
+                </ul>
+            </div>
+            <div class="header-socials">
+                <div class="icons-wrapper">
+                    <a href="#"><img src="images/insta-icon.png" alt=""></a>
+                    <a href="#"><img src="images/facebook-icon.png" alt=""></a>
+                </div>
+                <div class="header-button">
+                    <a href="#"><i class="fa-solid fa-bell"></i>Новини</a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- Header -->
+
+
+    <!-- Showcase -->
+    <section class="hero-wrapper">
+        <div class="hero-content">
+            <div class="hero-title">
+                <div class="hero-title-cont">
+                    <h2>Менше відходів – більше життя</h2>
+                    <h2>GreenMike – екологічна компанія, що дбає про майбутнє через відповідальну переробку.</h2>
+                    <a href="#" class="button-support">Підтримати</a>
+                </div>
+            </div>
+            <svg class="wave" viewBox="0 0 320 1440">
+                <path transform="scale(-1,1) translate(-320,0)" d="M128,0L144,60C160,120,192,240,208,360C224,480,224,600,186.7,720C149,840,75,960,74.7,1080C75,1200,149,1320,186.7,1380L224,1440H0V0Z"></path>
+              </svg>
+            
+            <div class="hero-map-wrapper">
+                <div id="map"></div>
+                <img src="images/Green-Mike2.png" alt="" class="map-bg">
+                <div class="hero-map-text">
+                    <h3> Знайди найближчий пункт переробки</h3>
+                    <p>Переглянь карту, щоб дізнатися, де можна здати відходи на переробку.</p>
+                    <a href="#" class="button-support">Наші Контакти</a>
+                    <img src="images/Green-Mike-8.png" alt="" class="img-hero-text">
+                </div>
+                
+            </div>
+        </div>
+        <svg class="waves" width="100%" height="150" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,50 C360,100 720,0 1080,50 C1440,100 1800,0 2160,50 L2160,0 L0,0 Z" 
+              fill="#5DD25E"/>
+          </svg>
+          
+    </section>
+    <!-- Showcase -->
+
+    
+
+    <!-- About -->
+     <section class="about-wrapper">
+        
+        <div class="swiper slider-wrapper">
+            <div class="swiper-about-title">
+                <h2>🌱 GreenMike – екологія в дії!</h2>
+                <p class="center">Ми створюємо екологічні рішення, які допомагають зробити навколишній світ чистішим. Приєднуйся до нас і разом змінимо майбутнє!</p>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img-slider-content">
+                        <img src="images/Green-Mike-5.png" alt="">
+                    </div>
+                    <div class="slider-text-content">
+                        <h3> GreenMike: чисте місто починається з тебе</h3>
+                        <p>Ми — команда, що змінює майбутнє, роблячи переробку відходів легкою та доступною. GreenMike допомагає зменшити кількість сміття, створюючи екологічно чисте місто.</p>
+                        <a href="#">Дізнатися більше</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-slider-content">
+                        <img src="images/Green-Mike-5.png" alt="">
+                    </div>
+                    <div class="slider-text-content">
+                        <h3> GreenMike: чисте місто починається з тебе</h3>
+                        <p>Ми — команда, що змінює майбутнє, роблячи переробку відходів легкою та доступною. GreenMike допомагає зменшити кількість сміття, створюючи екологічно чисте місто.</p>
+                        <a href="#">Дізнатися більше</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-slider-content">
+                        <img src="images/Green-Mike-5.png" alt="">
+                    </div>
+                    <div class="slider-text-content">
+                        <h3> GreenMike: чисте місто починається з тебе</h3>
+                        <p>Ми — команда, що змінює майбутнє, роблячи переробку відходів легкою та доступною. GreenMike допомагає зменшити кількість сміття, створюючи екологічно чисте місто.</p>
+                        <a href="#">Дізнатися більше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-pagination">
+                <div class="swiper-button-prev">
+                    <img src="images/back.png" alt="Назад">
+                </div>
+            
+                <div class="pagination-dots">
+
+                </div>
+            
+                <div class="swiper-button-next">
+                    <img src="images/next.png" alt="Вперёд">
+                </div>
+            </div>
+            
+        </div>
+     </section>
+    <!-- About -->
+
+    <!-- Recycling  -->
+     <section class="recycling-wrapper">
+        <div class="recycling-content">
+            <img src="images/leafes.svg" alt="" class="leafs-top">
+            <div class="recycle-images">
+                <div class="image-wrapper right">
+                    <img src="images/sorting2.jpg" alt="#">
+                </div>
+                <img src="images/Green-Mike-6.png" alt="" class="recycle-center">
+                <div class="image-wrapper bottom">
+                    <img src="images/sorting1.jpg" alt="#">
+                </div>
+                <div class="counter-recycle">
+                    <p>231,842</p>
+                    <h2>переробляється щороку</h2>
+                </div>
+            </div>
+            <img src="images/Green-Mike-11.png" alt="" class="bottom-monster">
+            <div class="recycle-text">
+                <h2>Процес переробки</h2>
+                <p>Сучасні технології дають можливість ефективно зменшувати кількість відходів. Завдяки розумним системам сортування та екологічним рішенням, ресурси отримують друге життя. Пластик, скло, папір та метал перетворюються на нові корисні матеріали, зменшуючи шкоду для довкілля.</p>
+                <a href="#" class="button-support">Дізнатися більше</a>
+            </div>
+        </div>
+     </section>
+    <!-- Recycling  -->
+
+    <!-- News -->
+     <section class="news-wrapper">
+        <div class="news-title text-center">
+            <h3>Будь у курсі! Читай останні еконовини ♻️</h3>
+            <h2>Дізнавайся про найсвіжіші події, дослідження та ініціативи у сфері екології та переробки.</h2>
+        </div>
+        <div class="news-content row center justify-content-center">
+            <article class="col-12 col-md-3">
+                <img src="images/news1.jpg" alt="">
+                <div class="news-text">
+                    <h2>Долучайтеся до команди</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, laudantium.</p>
+                    <a href="">Дійзнайтеся більше</a>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <img src="images/news1.jpg" alt="">
+                <div class="news-text">
+                    <h2>Долучайтеся до команди</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, laudantium.</p>
+                    <a href="">Дійзнайтеся більше</a>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <img src="images/news1.jpg" alt="">
+                <div class="news-text">
+                    <h2>Долучайтеся до команди</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, laudantium.</p>
+                    <a href="">Дійзнайтеся більше</a>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <img src="images/news1.jpg" alt="">
+                <div class="news-text">
+                    <h2>Долучайтеся до команди</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, laudantium.</p>
+                    <a href="">Дійзнайтеся більше</a>
+                </div>
+            </article>
+            <a href="#" class="learn-more">Переглянути інші статті</a>
+        </div>
+        <img src="images/forest-dark.1LADaUGn (1).svg" alt="" class="trees-back">
+        <div class="waves-news"></div>
+     </section>
+    <!-- News -->
+
+    <!-- Contacts -->
+    <section class="contact-wrapper">
+
+    </section>
+    <!-- Contacts -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Bootrstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Script -->
+     <script src="js/script.js"></script>
+</body>
+</html>
