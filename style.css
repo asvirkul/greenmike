@@ -134,7 +134,7 @@ header .header-socials .icons-wrapper a {
     left: 50%;
     width: auto;
     height: 200%; 
-    transform: translate(-99%, -50%); 
+    transform: translate(-99%, -49%); 
     transform-origin: center;
     z-index: 2;
   }
@@ -211,9 +211,9 @@ body > section.hero-wrapper > div > div.hero-map-wrapper > div.round-arrow-wrapp
 .img-hero-text {
     width: 300px;
     position: absolute;
-    left: -35%;
-    bottom: -6.7%;
-    transform: rotate(-9deg);    
+    left: 45%;
+    bottom: -20%;
+    transform: rotate(-9deg) translate(-50%, -50%);   
 }
 .hero-map-text {
     margin-top: 65px;
@@ -237,6 +237,7 @@ body > section.hero-wrapper > div > div.hero-map-wrapper > div.round-arrow-wrapp
     background-color: #004C3F  ;
     padding: 100px 0;
     font-family: var(--main-font);
+    overflow: hidden;
 }
 .slider-text-content {
     color: #fff;
@@ -388,7 +389,7 @@ body > section.hero-wrapper > div > div.hero-map-wrapper > div.round-arrow-wrapp
     display: flex;
     justify-content: left;
     flex-direction: column;
-    
+    width: 600px;
 }
 .recycle-images img {
     width: 50%;
@@ -430,7 +431,7 @@ body > section.hero-wrapper > div > div.hero-map-wrapper > div.round-arrow-wrapp
     border: 3px solid #1A1A1A;
     box-sizing: content-box;
 }
-.image-wrapper img {
+.image-wrapper img:not(.recycle-center) {
     width: 100%; 
     height: 100%; 
     object-fit: cover; 
@@ -478,8 +479,12 @@ body > section.hero-wrapper > div > div.hero-map-wrapper > div.round-arrow-wrapp
 }
 .recycle-center {
     position: absolute;
-    top: 5%;
+    top: 20px;
     left: 0;
+    width: 380px !important;
+}
+.greenmike-recycle {
+    position: relative;
 }
 .recycle-counter-wrapper {
     display: flex;
@@ -702,7 +707,7 @@ body > section.hero-wrapper > div > div.hero-map-wrapper > div.round-arrow-wrapp
 }
 .branch-bg {
     width: 250px;
-    right: 2%;
+    right: 10%;
     position: absolute;
     top: -64px;
     transform: rotate(20deg);
@@ -755,7 +760,7 @@ body > section.hero-wrapper > div > div.hero-map-wrapper > div.round-arrow-wrapp
 }
 .donation-waves img {
     position: absolute;
-    top: -300px;
+    top: -40%;
 }
 .donation-end {
     position: absolute;
@@ -779,6 +784,7 @@ body > section.hero-wrapper > div > div.hero-map-wrapper > div.round-arrow-wrapp
 footer {
     background-color: #B2F4B5;
     position: relative;
+    overflow: hidden;
 }
 footer .footer-copy img {
     width: 80px;
@@ -882,6 +888,18 @@ footer .footer-content {
     bottom: 0;
 }
 /* Footer */
+
+/* media */
+@media all and (max-width:1600px) {
+    .recycle-center {
+        display: none;
+    }
+    .recycle-images .counter-recycle {
+        right: -70px;
+    }
+    
+}
+/* media */
 
 @keyframes sway {
     0% { transform: rotate(0deg) skewX(0deg); }

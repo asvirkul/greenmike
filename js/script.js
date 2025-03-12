@@ -111,13 +111,6 @@ $(document).ready( function() {
             stagger: 0.3
         });
     
-        gsap.from(".img-hero-text", {
-            x: 100, 
-            opacity: 0,
-            duration: 1.2,
-            ease: "power3.out",
-            stagger: 0.3
-        });
         
     
     
