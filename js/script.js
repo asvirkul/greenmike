@@ -112,7 +112,23 @@ $(document).ready( function() {
         });
     
         
-    
-    
+
+            const menuBtn = document.querySelector(".header-mobile-menu");
+            const menu = document.querySelector(".mobile-menu");
+        
+            menuBtn.addEventListener("click", function () {
+                menuBtn.classList.toggle("active");
+                menu.classList.toggle("active");
+            });
+        
+            // Закрытие меню при клике на ссылку
+            document.querySelectorAll(".mobile-menu a").forEach(link => {
+                link.addEventListener("click", function () {
+                    menuBtn.classList.remove("active");
+                    menu.classList.remove("active");
+                });
+            });
+
+        
 
 })
