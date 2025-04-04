@@ -26,6 +26,7 @@ header {
     width: 100%;
     font-family: var(--main-font);
     padding: 10px 0;
+    
 }
 .header-content {
     display: flex;
@@ -2161,9 +2162,6 @@ header .header-mobile-menu img {
     width: 40%;
     overflow: visible !important;
 }
-.members-slider-wrapper .decor {
-    left: 0 !important;
-}
 .members-slider-wrapper .swiper-slide {
     display: flex;
     justify-content: space-around;
@@ -2263,6 +2261,9 @@ header .header-mobile-menu img {
     right: 40px;
     transform: rotate(-10deg);
     width: 170px;
+}
+.last-posts-wrapper .top-wave {
+    margin-bottom: -2px;
 }
 /* team */
 
@@ -2653,6 +2654,7 @@ header .header-mobile-menu img {
         display: flex;
         flex-direction: column;
     }
+    /* it's not a joke pls help */
     .history-img-wrapp {
         justify-self: start;
     }
@@ -2743,6 +2745,50 @@ header .header-mobile-menu img {
     }
 }
 @media all and (max-width:1200px)  {
+    .achieve-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .achieve-team-wrapper .achieve-title {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .achieve-team-wrapper .achieve-counter {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .achieve-counter p:nth-child(1) {
+        width: 40%;
+        background-color: #00a471;
+      }
+      .achieve-counter p:nth-child(2) {
+        width: 50%;
+        background-color: #2f7c34;
+      }
+      .achieve-counter p:nth-child(3) {
+        width: 60%;
+        background-color: #265c1a;
+      }
+      .achieve-counter p:nth-child(4) {
+        width: 70%;
+        background-color: #0e3c28;
+      }
+      .members-slider-wrapper .swiper-slide {
+        display: flex;
+        flex-direction: column;
+      }
+      .members-slider-wrapper .swiper-slide > div {
+        width: 60%;
+      }
+      .members-slider-wrapper .decor {
+        left: 15%;
+      }
+      .members-slider-wrapper .img-member img {
+        object-position: center;
+      } 
+      .members-slider-wrappe .swiper-horizontal > .swiper-pagination-progressbar, .members-slider-wrappe .swiper-pagination-progressbar.swiper-pagination-horizontal {
+        width: 80% !important;
+      }
     .pros-mike {
         display: none;
     }
@@ -3149,6 +3195,35 @@ header .header-mobile-menu img {
     }
 }
 @media all and (max-width:768px) {
+    .team-title h2 {
+        font-size: 35px;
+    }
+    .team-wrapper {
+        margin-top: 80px;
+    }
+    .member-text h2 {
+        font-size: 38px;
+    }
+    .member-text p {
+        font-size: 16px;
+    }
+    .achieve-title h2 {
+        font-size: 35px !important;
+    }
+    .members-slider-wrapper .decor {
+        left: 10% !important;
+    }
+    .team-title {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .team-title a {
+        font-size: 16px;
+    }
+    .team-wrapper p {
+        line-height: 28px;
+        font-size: 16px;
+    }
     .gallery-wrapper .decor {
         left: 0;
     }
@@ -3279,6 +3354,12 @@ header .header-mobile-menu img {
     }
 }
 @media all and (max-width:550px) {
+    .achieve-counter p {
+        width: 100% !important;
+    }
+    .lamp-team {
+        display: none;
+    }
     .header-button {
         display: none;
     }
@@ -3287,6 +3368,15 @@ header .header-mobile-menu img {
     }
     .swiper-about-title {
         padding: 0 20px;
+    }
+    .achieve-title h2 {
+        font-size: 30px !important;
+    }
+    .members-slider-wrapper .swiper-slide > div {
+        width: 90% !important;
+    }
+    .img-mike-wrapper.monster-scroll {
+        top: -120px;
     }
 }
 /* media */
