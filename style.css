@@ -1939,7 +1939,241 @@ header .header-mobile-menu img {
 }
 /* Page About */
 
+/* Lecture Page */
+.page-info-title {
+    background-color: #f0f0eb;
+    position: relative;
+    z-index: 20;
+}
+.page-info-wrapper {
+    position: relative;
+}
+.page-info-wrapper .trees-bg {
+    transform: rotate(180deg);
+}
+.wave-rotated {
+    transform: rotate(180deg);
+    position: relative;
+    z-index: 20;
+}
 
+.page-info-title h2 {
+    font-family: var(--main-font);
+    font-size: 70px;
+    color: #004C3F;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.page-info-wrapper .text-info p {
+    color: #1A1A1A;
+    font-family: var(--main-font);
+    line-height: 30px;
+}
+.page-info-wrapper .text-info h1,.page-info-wrapper .text-info h2,.page-info-wrapper .text-info h3,.page-info-wrapper .text-info h4,.page-info-wrapper .text-info h5,.page-info-wrapper .text-info h6 {
+    font-weight: bold;
+    color: #004C3F;
+    margin-bottom: 20px;
+}
+.text-info  ul li {
+    color: #1A1A1A;
+}
+.page-info-text-wrapper .text-info  {
+    background-color: #B2F4B5;
+    padding: 60px 80px;
+    border-radius: 40px;
+}
+.page-info-text-wrapper {
+    margin-bottom: 80px;
+}
+.text-info  ul li::before {
+    font-family: "Font Awesome 6 Brands"; /* или другой нужный FA шрифт */
+    content: "\f299"; /* код иконки "envira" */
+    font-weight: 400; /* нужный стиль: solid / regular / brands */
+    color: #1C981C;
+    margin-right: 8px;
+}
+.page-info-wrapper .text-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: var(--main-font);
+}
+.page-info-bg {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.page-info-title p {
+    font-family: var(--main-font);
+    color: #004C3F;
+    font-size: 25px;
+    margin-bottom: unset !important;
+}
+.members-slider-wrapper {
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.full-footer__wave {
+    margin-bottom: -2px;
+}
+/* Lecture Page */
+
+/* team */
+.team-wrapper {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+.team-wrapper .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    top: unset !important;
+    bottom: 0px !important;
+}
+.swiper-slide {
+    padding-bottom: 20px;
+}
+  .team-bg {
+    max-width: 750px;
+    margin: 0 auto;
+    font-family: var(--main-font);
+    text-align: center; 
+  }
+
+  .team-wrapper h2 {
+    font-size: 65px;
+    font-weight: 900;
+    color: #004C3F;
+  }
+  
+  .team-wrapper p {
+    font-size: 20px;
+    color: #004C3F;
+    line-height: 35px;
+    font-weight: 500;
+  }
+  
+  .team-wrapper a {
+    background-color: #1C981C;
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+.team-wave {
+    width: 100%;
+    background: #B2F4B5;
+}
+  .team-wrapper svg {
+    display: block;
+    width: 100%;
+    fill: linear-gradient(180deg, #D8F9DD 0%, #B2F4B5 35%, #85E3A1 70%, #5BC489 100%) !important;
+    height: auto;
+
+  }
+  .mike-team {
+    position: absolute;
+    width: 400px;
+    z-index: 5;
+    top: 71.5%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+}
+.bottle-team {
+    position: absolute;
+   width: 200px;
+    z-index: 5;
+    bottom: 25.9%;
+    right: 12%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+.members-slider-wrapper {
+    margin-top: 60px;
+}
+.members-slider-wrapper {
+    margin-bottom: 50px;
+}
+.members-slider-wrapper .img-member {
+    width: 100%;
+    height: 500px; 
+    overflow: hidden; 
+    border-radius: 20px; 
+    margin-bottom: 10px;
+    position: relative;
+}
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 30px;          /* длина линии */
+    height: 4px;          /* толщина линии */
+    background-color: #ccc;
+    opacity: 1;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #004C3F; /* цвет активной линии */
+  }
+  
+  
+.members-slider-wrapper .img-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top; 
+    display: block;
+}
+.custom-counter {
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: bold;
+    color: #004C3F;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.custom-counter .line {
+    height: 2px;
+    width: 40px;
+    background-color: #004C3F;
+  }
+.members-slider-wrapper .swiper-slide > div {
+    width: 40%;
+    overflow: visible !important;
+}
+.members-slider-wrapper .decor {
+    left: 0 !important;
+}
+.members-slider-wrapper .swiper-slide {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.member-text {
+    font-family: var(--main-font);
+    width: 40%;
+}
+.member-text p {
+    font-size: 18px;
+    color: #004C3F;
+}
+.member-text h2 {
+    color: #004C3F;
+    font-size: 55px;
+    font-weight: bold;
+}
+/* team */
 
 /* News Single */
 

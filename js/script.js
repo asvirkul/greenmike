@@ -1,4 +1,6 @@
-$(document).ready( function() {    
+$(document).ready( function() {
+
+    
     var swiper = new Swiper(".swiper", {
         loop: true,
         effect: "fade",
