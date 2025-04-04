@@ -2082,11 +2082,21 @@ header .header-mobile-menu img {
 }
 .bottle-team {
     position: absolute;
-   width: 200px;
+    width: 200px;
     z-index: 5;
-    bottom: 25.9%;
-    right: 12%;
-    transform: translate(-50%, -50%) rotate(180deg);
+    top: 0;
+    right: 0;
+    transform: translateX(-50%) rotate(180deg);
+}
+.members-slider-wrapper .swiper-pagination {
+    max-width: 1100px;
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+    position: static;
+}
+.wave-team-wrapper {
+    position: relative;
 }
 .members-slider-wrapper {
     margin-top: 60px;
@@ -2172,6 +2182,87 @@ header .header-mobile-menu img {
     color: #004C3F;
     font-size: 55px;
     font-weight: bold;
+}
+.last-posts-wrapper.team > svg {
+    fill: #004C3F !important;
+}
+.last-posts-wrapper.team .posts-wrapper{
+    background: #004C3F  !important;
+    color: #fff !important;
+}
+.last-posts-wrapper.team {
+    margin-bottom: 60px;
+}
+.achieve-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 2rem;
+  }
+  
+  .achieve-counter p {
+    background-color: #0e3c28;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+  body > section.last-posts-wrapper.team > div > svg {
+    margin-bottom: -2px;
+  }
+  /* ступенчатая ширина + разные цвета */
+  .achieve-counter p:nth-child(1) {
+    width: 160px;
+    background-color: #00a471;
+  }
+  .achieve-counter p:nth-child(2) {
+    width: 230px;
+    background-color: #2f7c34;
+  }
+  .achieve-counter p:nth-child(3) {
+    width: 280px;
+    background-color: #265c1a;
+  }
+  .achieve-counter p:nth-child(4) {
+    width: 330px;
+    background-color: #0e3c28;
+  }
+  
+  /* стартовое состояние до появления */
+  .achieve-counter p.hidden {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+.achieve-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 60px auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--main-font);
+}  
+.achieve-team-wrapper .achieve-title {
+    width: 50%;  
+}
+.achieve-team-wrapper .achieve-title h2 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #004C3F;
+}
+.achieve-team-wrapper .achieve-counter {
+    width: 45%;
+    position: relative;
+}
+.lamp-team {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    transform: rotate(-10deg);
+    width: 170px;
 }
 /* team */
 
